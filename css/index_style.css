@@ -1,0 +1,92 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav
+{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+nav li
+{
+    font-size: 1.2rem;
+}
+#home
+{
+    height: 100vh;
+}
+#home .carousel img
+{
+ height: 100vh;
+}
+/* activities style section */
+#activites .card .icons i:hover
+{
+  cursor: pointer;
+  background-color: black;
+}
+#activites .card .card-header-pills
+{
+    position: relative;
+    transition:all 1s;
+}
+
+#activites .card .card-header-pills .icons
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   visibility: hidden;
+}
+#activites .card .card-header-pills:hover .icons
+{
+ visibility: visible;
+}
+#activites .card .card-header-pills:hover
+{
+    transform: translate(0,-20px);
+}
+
+/* courses style section */
+#courses .card img
+{
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+#courses .card:hover img
+{
+    opacity: 1;
+}
+#courses .card  .card-body
+{
+    visibility: hidden;
+}
+#courses .card:hover .card-body
+{
+  visibility:visible ;
+  transition: visibility 1s;
+}
+/* our team style */
+#ourTeam img
+{
+    width: 90px;
+    height: 90px;
+    transition: all 1s;
+}
+#ourTeam ul.nav-tabs a
+{
+    transition: all 1s;
+}
+/* class added to selcted img */
+.scale
+{
+    transform: scale(1.3);
+    border: 1px solid red;
+}
+
